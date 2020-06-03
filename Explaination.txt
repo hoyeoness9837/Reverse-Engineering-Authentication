@@ -1,0 +1,7 @@
+In the models folder, there are 2 javascript files. In the index.js, it utilizes sequelize and importing env from config.json to create a data base with username and password properties. using that database as key, for each key, modelName is set to be associated. with that database. and export the database out.
+In the middleware folder of config folder, it limits the server for users to access if they are signed in. config.json shows initial database of mysql looks like. passport.js of config folder uses the db from the models to verify if user uses correct format for username and password.
+html-routes in the routes responds to the sever that is requested via the middleware and leads to the associated html files in the public folder. api-routes will embedding raw data in the api url.
+server.js gethers all the codes from models, routes and passport.js including middleware, and passing them to the front-end.
+
+
+some modules are overdonely called saperately in different files. that could be fixed by organizing them better. also there are only a few styling for the front-end html. we can give more styling.
